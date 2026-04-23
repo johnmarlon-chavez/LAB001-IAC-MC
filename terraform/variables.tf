@@ -1,14 +1,11 @@
-variable "dev_ports" {
+variable "api_port" {
   type = map(number)
-  description = "Puertos externos para el entorno de DEV"
 }
 
-variable "qa_ports" {
+variable "web_port" {
   type = map(number)
-  description = "Puertos externos para el entorno de QA"
 }
 
-variable "postgres_password" {
-  type      = string
-  sensitive = true
+variable "db_port" {
+  type = map(number)
 }
