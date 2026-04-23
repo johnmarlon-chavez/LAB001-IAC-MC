@@ -1,13 +1,17 @@
-dev_ports = {
-  web = 4001
-  api = 4002
-  db  = 4003
+api_port = {
+  default = 2001
+  dev     = 4002
+  qa      = 5002
 }
 
-qa_ports = {
-  web = 5001
-  api = 5002
-  db  = 5003
+web_port = {
+  default = 2002
+  dev     = 4001
+  qa      = 5001
 }
 
-postgres_password = "password123"
+db_port = {
+  default = 2003
+  dev     = 4003
+  qa      = 5003
+}
